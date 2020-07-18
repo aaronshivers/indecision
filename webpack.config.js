@@ -6,8 +6,6 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'public'),
   },
-  mode: 'development',
-  watch: true,
   watchOptions: {
     ignored: /node_modules/,
   },
