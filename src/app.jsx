@@ -9,4 +9,4 @@ ReactDOM.render((
     <GlobalStyle />
     <IndecisionApp />
   </>
-), document.querySelector('body'));
+), document.querySelector('#app'));

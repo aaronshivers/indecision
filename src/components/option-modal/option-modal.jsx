@@ -11,7 +11,7 @@ import { Button } from '../../app.styles';
 
 const { colors, sizes } = styleSettings;
 
-Modal.setAppElement('body');
+Modal.setAppElement('#app');
 
 const customStyles = {
   overlay: {
