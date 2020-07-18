@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -6,6 +7,7 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'public'),
   },
+  mode: 'production',
   watchOptions: {
     ignored: /node_modules/,
   },
@@ -44,4 +46,11 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'public'),
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Indecision',
+      favicon: './src/assets/favicon.png',
+      template: './src/assets/index.html',
+    }),
+  ],
 };
