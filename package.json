@@ -5,7 +5,7 @@
   "author": "aaron shivers",
   "license": "MIT",
   "scripts": {
-    "build": "npx webpack -p",
+    "build": "npx webpack",
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
